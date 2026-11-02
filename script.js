@@ -1,5 +1,5 @@
 const students = [];
-let nextId = 1;
+
 
 // 1. Öğrenci Ekle
 const addStudent = () => {
@@ -10,8 +10,13 @@ const addStudent = () => {
     return;
   }
 
-  students.push({ id: nextId, name: name.trim() });
-  nextId++;
+  students.push({
+  id: students[students.length - 1]?.id
+    ? students[students.length - 1].id + 1
+    : 1,
+  name: name.trim()
+});
+
   alert("Öğrenci başarıyla eklendi!");
 };
 
