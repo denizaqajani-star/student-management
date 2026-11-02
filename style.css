@@ -1,0 +1,55 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1e293b;
+  background: linear-gradient(135deg, #e0e7ff, #f0fdfa);
+}
+.card {
+  width: min(100%, 560px);
+  padding: 44px 36px;
+  text-align: center;
+  border-radius: 24px;
+  background: white;
+  box-shadow: 0 20px 60px rgba(30, 41, 59, .12);
+}
+.symbol { font-size: 48px; }
+.eyebrow { color: #4f46e5; font-size: 12px; font-weight: bold; letter-spacing: 2px; }
+h1 { margin: 12px 0; font-size: clamp(25px, 5vw, 34px); }
+.description { color: #64748b; line-height: 1.7; }
+.features { display: flex; flex-wrap: wrap; justify-content: center; gap: 9px; margin: 26px 0; }
+.features span { background: #eef2ff; color: #4338ca; padding: 9px 12px; border-radius: 999px; font-size: 13px; }
+button { width: 100%; padding: 16px; border: 0; border-radius: 12px; color: white; background: #4f46e5; font-size: 16px; font-weight: bold; cursor: pointer; }
+button:hover { background: #4338ca; }
+button:focus-visible { outline: 3px solid #818cf8; outline-offset: 3px; }
+.hint { margin: 16px 0 0; color: #94a3b8; font-size: 13px; }
+/* Pink Theme - paste at the END of style.css */
+body {
+  background: linear-gradient(135deg, #fff0f6, #ffe0ed);
+}
+.card {
+  background: #fffafd;
+  border: 1px solid #ffc9df;
+  box-shadow: 0 20px 50px rgba(219, 100, 151, 0.18);
+}
+.eyebrow {
+  color: #d85d96;
+}
+.features span {
+  background: #ffe1ee;
+  color: #a83d73;
+}
+#startButton {
+  background: linear-gradient(135deg, #f9a8d4, #ec70aa);
+  color: white;
+  border: none;
+  box-shadow: 0 8px 22px rgba(236, 112, 170, 0.3);
+}
+#startButton:hover {
+  background: linear-gradient(135deg, #f58cbe, #df5795);
+}
+
